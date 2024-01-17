@@ -1,0 +1,55 @@
+# Recursos de Treinamento e Documentação
+
+## Linux
+- [Guia Foca - Linux](http://www.guiafoca.org/)
+
+## Zabbix
+- [Guia Foca - Zabbix](http://www.guiafoca.org/Zabbix)
+  - Curso Monitoramento com Zabbix (em Português): [YouTube](https://www.youtube.com/watch?v=qZ_J_a2lJHs&list=PLRuyhfRgzSIlgaIxtJAFIs7rXe7ZRWFOp)
+  - Observações: A versão do Zabbix apresentada no curso pode não ser a mais recente; foco em entender a arquitetura e conceitos principais.
+
+- Canal Dmitry Lambert no YouTube (em Inglês): [YouTube](https://www.youtube.com/c/ZabbixCookBook/videos)
+
+## Docker
+- Curso Docker Básico Inicial: [LearnDocker](https://learndocker.online)
+- Outros links interessantes para treinamentos Docker:
+  - [Play with Docker](https://training.play-with-docker.com/)
+  - [Docker Curriculum](https://docker-curriculum.com/)
+  - Documentação Docker: [Site Oficial](https://docs.docker.com/), [Get Started](https://docs.docker.com/get-started/), [Dev Best Practices](https://docs.docker.com/develop/dev-best-practices/), [Dockerfile Best Practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/), [Docker Compose](https://docs.docker.com/compose/)
+  - Curso Online: [Getting Started with Docker](https://cloudacademy.com/course/getting-started-with-docker/)
+
+## Kubernetes
+- [Complete Kubernetes Tutorial for Beginners (Playlist)](https://www.youtube.com/watch?v=VnvRFRk_51k&list=PLy7NrYWoggjziYQIDorlXjTvvwweTYoNC)
+- Descomplicando o Kubernetes: [GitHub](https://github.com/badtuxx/DescomplicandoKubernetes)
+- Kubernetes the Hard Way: [GitHub](https://github.com/kelseyhightower/kubernetes-the-hard-way)
+
+## Rancher
+- [Learn the Basics](https://rancher.com/learn-the-basics)
+- Treinamentos Rancher: [Community SUSE](https://community.suse.com)
+- Intro to Kubernetes and Rancher Online Training: [YouTube](https://www.youtube.com/watch?v=x34xoZf8_4c&list=PLfAoTEAPazb4fQQwOxY3uXsO_UBK3fEPG)
+
+## Ansible
+- [Ansible Basics](https://www.udemy.com/course/ansible-basics-an-automation-technical-overview/)
+- [Ansible Best Practises](https://github.com/enginyoyen/ansible-best-practises)
+- Ansible Basics: Automation Technical Overview: [Red Hat Training](https://www.redhat.com/pt-br/services/training/do007-ansible-essentials-simplicity-automation-technical-overview)
+
+## Git
+- [Introduction to Git and GitHub](https://www.coursera.org/learn/introduction-git-github)
+- [Git - Guia Prático](https://rogerdudler.github.io/git-guide/index.pt_BR.html)
+
+## Mediawiki
+- [Ajuda de Formatação](https://www.mediawiki.org/wiki/Help:Formatting/pt-br)
+
+## OTRS
+- [Abertura de chamados no OTRS](https://web.microsoftstream.com/video/cd2c4d22-8970-43ec-bea7-0b70c75417b7)
+
+## Redmin
+- [Introdução ao Gertiq](https://senadofederal-my.sharepoint.com/:v:/g/personal/fbianchi_senado_leg_br/EUHiPgZ5ULRMvSRM8GkVwLkBMtWCSDrbhKvr_it3VESWjw)
+
+## Roteiro para Ambientação de Novos Desenvolvedores
+- [Portal do Desenvolvedor do Senado](https://portaldesenv.senado.leg.br/xwiki/bin/view/Main/RoteiroAmbientacaoNovosDesenvolvedores)
+
+## Sugestões de Canais no Youtube
+- Algumas sugestões de canais no Youtube para introduções e aprimoramento de conceitos em: Docker, Kubernetes, DevOps, Infraestrutura como código:
+  - [TechWorldwithNana](https://www.youtube.com/c/TechWorldwithNana)
+  - [LinuxTips (em português)](https://www.youtube.com/c/LinuxTips/)
