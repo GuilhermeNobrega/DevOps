@@ -1,2 +1,2 @@
 # Senado
-Aprendizados senado, fazer
+Aprendizados senado
