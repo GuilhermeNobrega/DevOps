@@ -47,7 +47,11 @@ Benefícios: A integração do Docker no CI/CD automatiza o ciclo de vida da apl
 
 *Docker Swarm*: Ferramenta que possibilita a orquestração do Docker, permitindo criar e gerenciar clusters de contêineres Docker (Clusters são a união de máquinas (nós) conectadas a fim de realizar operações comuns). Em um cluster Docker Swarm, vários nós Docker (máquinas físicas ou virtuais) são agrupadas para formar um ambiente unificado
 
-**
+*Kubernetes*: Sistema, de código aberto, utilizado para orquestrar os contêineres (escalabilidade e aplicações).
+
+*Registry Docker (Docker Hub)*: Serviço que possibilita armazenar e compartilhar imagens Docker publicamente ou de forma privada.
+
+*Docker Volumes*: Mecanismo utilizado para armazenamento dos dados mesmo quando os contêineres são destruídos ou substituídos
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -------------------------------------------------------------------------------------------------------------
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
