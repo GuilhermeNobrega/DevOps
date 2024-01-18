@@ -36,11 +36,18 @@ Benefícios: Essa abordagem fornece flexibilidade para lidar com variações na 
 *Versionamento e Rollback*: Os contêineres Docker podem ser versionados, o que significa que diferentes versões de uma aplicação podem ser controladas e gerenciadas. Isso permite que os DevOps mantenham o controle sobre as alterações e atualizações de cada aplicação ao longo do tempo. Além disso, se uma atualização causar problemas ou falhas, é possível reverter rapidamente para uma versão anterior, realizando um rollback.
 Benefícios: O versionamento facilita o rastreamento das mudanças em uma aplicação e a implementação de estratégias de deploy mais seguras. A capacidade de realizar rollbacks rápidos minimiza o impacto de problemas que podem ocorrer após uma atualização, garantindo a estabilidade da aplicação;
 
-Integração Contínua e Entrega Contínua (CI/CD):O Docker é integrado de forma ampla em pipelines de Integração Contínua e Entrega Contínua (CI/CD). CI/CD é uma prática que envolve automação do processo de construção, teste e implantação de código. O Docker é usado nesses pipelines para criar ambientes de desenvolvimento e teste consistentes, garantindo que a aplicação funcione conforme esperado em diferentes estágios do processo de desenvolvimento.
+*Integração Contínua e Entrega Contínua (CI/CD)*:O Docker é integrado de forma ampla em pipelines de Integração Contínua e Entrega Contínua (CI/CD). CI/CD é uma prática que envolve automação do processo de construção, teste e implantação de código. O Docker é usado nesses pipelines para criar ambientes de desenvolvimento e teste consistentes, garantindo que a aplicação funcione conforme esperado em diferentes estágios do processo de desenvolvimento.
 Benefícios: A integração do Docker no CI/CD automatiza o ciclo de vida da aplicação, acelerando a entrega de novas funcionalidades. A consistência entre os ambientes de desenvolvimento, teste e produção assegura que a aplicação se comporte de maneira uniforme em todas as fases do desenvolvimento e implantação.
 
-Imagem Docker: contém código de aplicativo, bibliotecas, ferramentas, dependências e outros arquivos necessários para executar um aplicativo. Quando alguém executa uma imagem, ela pode se tornar uma ou várias instâncias de um contêiner.
+*Imagem Docker*: contém código de aplicativo, bibliotecas, ferramentas, dependências e outros arquivos necessários para executar um aplicativo. Quando alguém executa uma imagem, ela pode se tornar uma ou várias instâncias de um contêiner.
 
+*Docker File*: Arquivo de texto que possue instruções para construir uma IMAGEM docker; Descreve passo a passo para configurar e executar uma aplicação dentro de um contêiner.
+
+*Docker Compose*: Ferramenta que possibilita configuração de vários serviços, redes e volumes em um único arquivo, além de executar aplicações multi-container em Docker.
+
+*Docker Swarm*: Ferramenta que possibilita a orquestração do Docker, permitindo criar e gerenciar clusters de contêineres Docker (Clusters são a união de máquinas (nós) conectadas a fim de realizar operações comuns). Em um cluster Docker Swarm, vários nós Docker (máquinas físicas ou virtuais) são agrupadas para formar um ambiente unificado
+
+**
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -------------------------------------------------------------------------------------------------------------
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
