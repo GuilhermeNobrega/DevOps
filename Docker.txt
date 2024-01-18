@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------------------------------------
+# Introdução ao Docker
+
+O Docker é uma plataforma que possibilita a criação e administração de ambientes isolados, permitindo o empacotamento de aplicações ou ambientes inteiros em contêineres. Essa abordagem torna as aplicações portáteis para qualquer host que possua o Docker instalado.
+
+Na máquina em que você o implantou, é possível executar diversas aplicações, e o uso do Docker apresenta uma utilização menor de memória quando comparado à virtualização convencional.
+Ao contrário das máquinas virtuais, que exigem mais de um sistema operacional para executar a aplicação, os contêineres são mais leves.
+
+## Características dos Contêineres
+
+Os contêineres são ambientes isolados e leves, semelhantes a ambientes virtuais, que contêm todos os elementos necessários para a execução de uma aplicação, incluindo código, bibliotecas e configurações, enquanto consomem poucos recursos do computador.
+
+### Compartilhamento do Kernel
+
+É importante destacar que os contêineres compartilham o kernel do sistema operacional hospedeiro. Em outras palavras, os contêineres Docker utilizam o kernel do sistema operacional do host, que é o sistema operacional na máquina em que os contêineres estão sendo executados.
+O kernel é a parte central do sistema operacional responsável por gerenciar os recursos de hardware e fornecer serviços aos processos do sistema.
+
+Ao mencionar que os contêineres compartilham o kernel, significa que não é necessário um sistema operacional completo para cada instância, como ocorre com as máquinas virtuais.
+Em vez disso, vários contêineres podem ser executados em uma única instância do sistema operacional, compartilhando o mesmo kernel, mas isolando o ambiente da aplicação.
+
+## Benefícios do Uso do Docker
+
+Essa abordagem oferece eficiência, pois os contêineres são mais leves e inicializam mais rapidamente em comparação com máquinas virtuais completas, que precisam de seu próprio kernel e sistema operacional.
+Isso resulta em um uso mais eficiente dos recursos do sistema, permitindo que os contêineres sejam mais ágeis e portáteis.
+
+Para saber mais sobre o Docker, consulte [a documentação oficial](https://docs.docker.com/).
+-------------------------------------------------------------------------------------------------------------
+Resumindo..
+
+O Docker é um gerenciador de contêineres que oferece uma plataforma completa com ferramentas e interface para criar, distribuir e executar contêineres.
+Esta tecnologia proporciona uma abordagem padronizada para empacotar aplicativos e suas dependências, simplificando o desenvolvimento, distribuição e execução de aplicações em ambientes diversos.
+
+Um contêiner é uma unidade de software que encapsula uma aplicação e todas as suas dependências, como bibliotecas, binários e configurações.
+Esse ambiente isolado permite a execução consistente da aplicação, independentemente do ambiente de hospedagem. Os contêineres compartilham o kernel do sistema operacional hospedeiro, tornando-os mais leves e eficientes em comparação com alternativas, como as máquinas virtuais.
