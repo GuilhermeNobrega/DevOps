@@ -26,6 +26,22 @@ Isso resulta em um uso mais eficiente dos recursos do sistema, permitindo que os
 ## Sobre os Containers
 
 Namespace é conceito que que permite isolar os recursos e processos entre diferentes ambientes ou conteneires em um sistema operacional. Este conceito é importante pois garante a segurança, o isolamento e a consistência no gerenciamento de contêneires.
+Namespaces no linux: No contexto do Linux, os namespaces são um recurso do kernel que permite a criação de ambientes isolados. Cada namespace isola um conjunto específico de recursos do sistema operacional, como processos, redes, sistemas de arquivos, IDs de usuário, entre outros. Isso é fundamental para garantir que os processos em um contêiner não vejam ou interfiram nos processos de outros contêineres ou do host.
+
+Principais namespaces do Linux usados em containers:
+
+PID Namespace: Isola o espaço de processos, permitindo que os processos em um contêiner tenham sua própria visualização de processos.
+Network Namespace: Isola a pilha de rede, fornecendo interfaces de rede independentes para cada contêiner.
+Mount Namespace: Isola o sistema de arquivos, permitindo que cada contêiner tenha seu próprio sistema de arquivos raiz.
+UTS Namespace: Isola o hostname e o domínio NIS, permitindo que cada contêiner tenha seu próprio nome de host.
+IPC Namespace: Isola a comunicação entre processos, fornecendo segmentos de IPC independentes.
+Namespaces do Docker:
+
+O Docker, que é uma plataforma de contêineres, utiliza os namespaces do Linux para isolar os contêineres. Ao executar um contêiner, o Docker cria instâncias desses namespaces para garantir o isolamento. Cada contêiner, portanto, tem seus próprios processos, sistema de arquivos, interfaces de rede, etc.
+
+Além dos namespaces do Linux, o Docker introduziu o conceito de "namespace de usuário" (User Namespace), permitindo que um contêiner execute processos como um usuário não privilegiado dentro do contêiner, mas esses processos podem ser mapeados para um usuário privilegiado fora do contêiner.
+
+cgroups: Os cgroups servem para gerenciar o consumo de memória e cpu dos containers.
 
 Para saber mais sobre o Docker, consulte [a documentação oficial](https://docs.docker.com/).
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
