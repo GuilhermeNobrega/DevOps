@@ -23,6 +23,10 @@ Em vez disso, vários contêineres podem ser executados em uma única instância
 Essa abordagem oferece eficiência, pois os contêineres são mais leves e inicializam mais rapidamente em comparação com máquinas virtuais completas, que precisam de seu próprio kernel e sistema operacional.
 Isso resulta em um uso mais eficiente dos recursos do sistema, permitindo que os contêineres sejam mais ágeis e portáteis.
 
+## Sobre os Containers
+
+Namespace é conceito que que permite isolar os recursos e processos entre diferentes ambientes ou conteneires em um sistema operacional. Este conceito é importante pois garante a segurança, o isolamento e a consistência no gerenciamento de contêneires.
+
 Para saber mais sobre o Docker, consulte [a documentação oficial](https://docs.docker.com/).
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -------------------------------------------------------------------------------------------------------------
