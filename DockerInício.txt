@@ -52,6 +52,13 @@ Benefícios: A integração do Docker no CI/CD automatiza o ciclo de vida da apl
 *Registry Docker (Docker Hub)*: Serviço que possibilita armazenar e compartilhar imagens Docker publicamente ou de forma privada.
 
 *Docker Volumes*: Mecanismo utilizado para armazenamento dos dados mesmo quando os contêineres são destruídos ou substituídos
+
+*Docker Network*: Definição: Um recurso que permite que contêineres se comuniquem entre si em uma rede isolada, permitindo a interação entre diferentes serviços em contêineres.
+
+*Compose File*: Definição: Arquivo YAML usado para definir configurações para serviços, redes e volumes usando o Docker Compose.
+
+*Swarm Mode*: Definição: Modo no Docker Swarm que permite transformar um conjunto de nós Docker em um cluster orquestrado.
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -------------------------------------------------------------------------------------------------------------
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
