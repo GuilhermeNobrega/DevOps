@@ -24,7 +24,26 @@ Essa abordagem oferece eficiência, pois os contêineres são mais leves e inici
 Isso resulta em um uso mais eficiente dos recursos do sistema, permitindo que os contêineres sejam mais ágeis e portáteis.
 
 Para saber mais sobre o Docker, consulte [a documentação oficial](https://docs.docker.com/).
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -------------------------------------------------------------------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+--> Termos importantes <--:
+*Orquestrar contêineres*: Significa administrar e coordenar a execução de contêneires em ambientes distribuidos;
+
+*Escalabilidade de aplicações*: O Docker simplifica a escalabilidade de aplicações, o que significa que é fácil ajustar a quantidade de recursos destinados a uma aplicação para atender à demanda. Isso é feito por meio da replicação de contêineres. Se a carga de trabalho aumentar, é possível adicionar mais contêineres para lidar com o aumento de tráfego. Se a demanda diminuir, alguns contêineres podem ser removidos para economizar recursos.
+Benefícios: Essa abordagem fornece flexibilidade para lidar com variações na demanda, garantindo eficiência na utilização de recursos. A escalabilidade automática dos contêineres Docker facilita a resposta dinâmica às mudanças nas condições de uso da aplicação;
+
+*Versionamento e Rollback*: Os contêineres Docker podem ser versionados, o que significa que diferentes versões de uma aplicação podem ser controladas e gerenciadas. Isso permite que os DevOps mantenham o controle sobre as alterações e atualizações de cada aplicação ao longo do tempo. Além disso, se uma atualização causar problemas ou falhas, é possível reverter rapidamente para uma versão anterior, realizando um rollback.
+Benefícios: O versionamento facilita o rastreamento das mudanças em uma aplicação e a implementação de estratégias de deploy mais seguras. A capacidade de realizar rollbacks rápidos minimiza o impacto de problemas que podem ocorrer após uma atualização, garantindo a estabilidade da aplicação;
+
+Integração Contínua e Entrega Contínua (CI/CD):O Docker é integrado de forma ampla em pipelines de Integração Contínua e Entrega Contínua (CI/CD). CI/CD é uma prática que envolve automação do processo de construção, teste e implantação de código. O Docker é usado nesses pipelines para criar ambientes de desenvolvimento e teste consistentes, garantindo que a aplicação funcione conforme esperado em diferentes estágios do processo de desenvolvimento.
+Benefícios: A integração do Docker no CI/CD automatiza o ciclo de vida da aplicação, acelerando a entrega de novas funcionalidades. A consistência entre os ambientes de desenvolvimento, teste e produção assegura que a aplicação se comporte de maneira uniforme em todas as fases do desenvolvimento e implantação.
+
+Imagem Docker: contém código de aplicativo, bibliotecas, ferramentas, dependências e outros arquivos necessários para executar um aplicativo. Quando alguém executa uma imagem, ela pode se tornar uma ou várias instâncias de um contêiner.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-------------------------------------------------------------------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Resumindo..
 
 O Docker é um gerenciador de contêineres que oferece uma plataforma completa com ferramentas e interface para criar, distribuir e executar contêineres.
