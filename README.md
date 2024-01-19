@@ -1,7 +1,8 @@
 
 ![image](https://github.com/GuilhermeNobrega/Senado/assets/100214869/a2982a1e-1e5a-48b2-ac2e-861d744151ca)
 <br>
-# Aprendendo Docker
+# Aprendendo Docker<img src="https://assets-v2.lottiefiles.com/a/a8f464c6-1172-11ee-93d6-4ff65dbb03d0/zGLmMrwT4s.gif" alt="Exemplo de GIF" width="300" height=""/>
+
 
 Se você está interessado em explorar e aprimorar suas habilidades com Docker, você está no lugar certo. Docker é uma plataforma poderosa que facilita a criação, distribuição e execução de aplicações em ambientes isolados chamados contêineres.
 
