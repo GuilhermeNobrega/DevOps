@@ -16,3 +16,8 @@ Docker torna o processo de empacotar, distribuir e executar aplicações mais ef
 
 2. **Clique no Botão Abaixo para Baixar o Docker:**
    - [![](https://img.shields.io/badge/InstallDocker-black.svg)](https://docs.docker.com/desktop/install/windows-install/)
+
+3. **Documentação dos comandos Docker:**
+   - [![](https://img.shields.io/badge/Commands-red.svg)](https://docs.docker.com/engine/reference/commandline/container_ls/)
+  
+     Explore a documentação 
