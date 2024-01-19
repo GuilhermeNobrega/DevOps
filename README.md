@@ -12,7 +12,7 @@ Docker torna o processo de empacotar, distribuir e executar aplicações mais ef
 1. **Clique no Botão Abaixo para Aprender Docker:**
    - [![](https://img.shields.io/badge/AprenderDocker-blue.svg)](https://learndocker.online/courses/)
    
-   Explore tutoriais, documentação e recursos que o ajudarão a entender os conceitos fundamentais do Docker.
+   Explore tutoriais e recursos que o ajudarão a entender os conceitos fundamentais do Docker.
 
 2. **Clique no Botão Abaixo para Baixar o Docker:**
    - [![](https://img.shields.io/badge/InstallDocker-black.svg)](https://docs.docker.com/desktop/install/windows-install/)
