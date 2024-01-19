@@ -1,0 +1,36 @@
+Instalação do Linux Ubuntu em uma Máquina Virtual usando o VirtualBox
+Este guia fornece instruções detalhadas para instalar o Linux Ubuntu em uma máquina virtual utilizando o VirtualBox.
+
+Passo 1: Baixar o Ubuntu
+Acesse o site oficial do Ubuntu.  https://ubuntu.com/download
+Escolha a versão desejada do Ubuntu, como a versão LTS para estabilidade a longo prazo.
+Selecione a arquitetura do sistema (32 bits ou 64 bits) de acordo com a capacidade do seu processador.
+Clique no botão "Download" para obter a imagem ISO do Ubuntu.
+Passo 2: Instalar o VirtualBox
+Caso não tenha o VirtualBox instalado, faça o download no site oficial do VirtualBox.  https://www.virtualbox.org/
+Siga as instruções do instalador para configurar o VirtualBox no seu sistema operacional.
+Passo 3: Criar uma Nova Máquina Virtual no VirtualBox
+Abra o VirtualBox.
+Clique em "Novo" para criar uma nova máquina virtual.
+Insira um nome para a máquina virtual, por exemplo, "Ubuntu", e escolha o tipo para "Linux". Se disponível, selecione a versão para "Ubuntu".
+Atribua a quantidade de memória RAM desejada (recomenda-se pelo menos 2 GB).
+Na etapa de criação de disco rígido, escolha a opção "Criar um disco rígido virtual agora" e clique em "Criar".
+Passo 4: Configurar o Disco Rígido Virtual
+Escolha o tipo de arquivo de disco rígido, geralmente o padrão (VDI).
+Opte por disco dinamicamente alocado ou de tamanho fixo. A alocação dinâmica é mais eficiente em termos de espaço em disco.
+Atribua o tamanho do disco rígido virtual (recomenda-se pelo menos 25 GB para uma instalação completa do Ubuntu).
+Passo 5: Montar a Imagem ISO do Ubuntu
+Com a máquina virtual selecionada, clique em "Configurações".
+Vá para a guia "Armazenamento".
+No controlador IDE, clique no ícone do disco vazio abaixo de "Controlador: IDE".
+No painel à direita, clique no ícone do disco ao lado de "Controlador: IDE" e escolha "Selecionar um arquivo de disco óptico".
+Selecione a imagem ISO do Ubuntu que você baixou.
+Passo 6: Iniciar a Máquina Virtual e Instalar o Ubuntu
+Com a máquina virtual selecionada, clique em "Iniciar".
+A máquina virtual inicializará a partir da imagem ISO. Siga as instruções na tela para instalar o Ubuntu.
+Quando solicitado, escolha a opção de instalação do sistema operacional.
+Siga as instruções de configuração e aguarde a conclusão da instalação.
+Passo 7: Concluir a Instalação
+Após a instalação, reinicie a máquina virtual.
+Ejecte a imagem ISO do Ubuntu das configurações da máquina virtual para evitar que ela inicialize novamente.
+Agora, você deverá ter o Ubuntu instalado e pronto para uso na sua máquina virtual.
