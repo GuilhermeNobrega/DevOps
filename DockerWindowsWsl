@@ -1,0 +1,8 @@
+Baixe o docker para windows:
+https://docs.docker.com/desktop/install/windows-install/
+
+Após isso, siga passo a passo do software (instalação padrão)
+
+Após isso, inicie o aplicativo do docker e vamos testar em nosso Power Shell ou cmd:
+
+- docker run hello-world
