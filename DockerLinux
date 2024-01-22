@@ -3,4 +3,28 @@ https://youtu.be/rJ9ysibH768?si=9Vi3k-7VUHxaoF-r
 Após instalação do sistema operacional Linux em sua máquina, siga a documentação, também, para instalar o docker em seu linux:
 
 https://docs.docker.com/engine/install/ubuntu/
+============================================================================================================
+PASSO 1:
+============================================================================================================
+Atualizando os repositórios:
+Dados os recados, para instalar o Docker é bem simples: basta seguir a documentação, partindo do ponto em que vamos copiar o comando de atualizar os repositórios, isto é, os pacotes do Ubuntu.
 
+sudo apt-get update
+============================================================================================================
+PASSO 2:
+============================================================================================================
+Ao executar esse comando, será solicitada a sua senha de sudo. Após inserir a senha, ele vai atualizar rapidamente, e podemos seguir copiando e colando os comandos abaixo.
+
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+============================================================================================================
+Por curiosidade.. ca-certificates: Este pacote contém certificados de autoridade (CA) confiáveis. Esses certificados são usados para verificar a autenticidade de conexões seguras.
+curl: É uma ferramenta de linha de comando utilizada para transferir dados com URLs. Muitas vezes é usada para baixar conteúdo da internet.
+gnupg: O GnuPG (GNU Privacy Guard) é uma implementação de software de criptografia que fornece serviços de privacidade e autenticação.
+Ele é frequentemente usado para verificar a autenticidade de pacotes e chaves de assinatura em sistemas Linux.
+lsb-release: Este pacote fornece informações sobre a distribuição Linux, como o nome e a versão.
+Em resumo, esses comandos estão instalando pacotes essenciais relacionados à segurança, comunicação segura na internet, criptografia e obtenção de informações sobre a distribuição do sistema.
+Esses pacotes são frequentemente necessários para garantir que o sistema esteja configurado corretamente e pronto para instalar outros softwares.
