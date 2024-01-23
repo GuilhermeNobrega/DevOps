@@ -100,10 +100,16 @@ docker run imagem (Executar a imagem)
 docker pull imagem (Apenas para baixar essa imagem)
 docker ps ou docker container ls (Apresentar containers EM execução)
 docker ps -a ou docker container ls -a (Apresentar containers que ESTAVAM em execução)
-docker stop CONTAINER ID ou NAMES (Parar a execução daquele container)
+docker stop CONTAINER ID ou NAMES (Parar a execução daquele container); pode usar o -t=0 para tirar o tempo de 10 segundos (docker stop ID -t=0)
 docker start CONTAINER ID ou NAMES (Voltar a execução daquele container)
 docker pause CONTAINER ID (Pausa o container)
 docker unpause CONTAINER ID (Volta o container para operação)
+docker exec -it CONTAINER ID bash (Iniciar container e entrar dentro de seu terminal)
+docker run -it imagem (ubuntu,etc) bash (Iniciar container e entrar dentro de seu terminal)
+docker rm CONTAINER ID (Remove container)
+docker volume prune (Você pode verificar se existem volumes não utilizados que podem estar retendo espaço em disco. Listar e remover volumes não utilizados)
+docker container prune (Se você quiser remover todos os containers que não estão em execução)
+docker image prune ( Apagar imagens não utilizadas)
 
 Com a execução deste último comando citado, aparecerá no terminal:
 
@@ -120,3 +126,5 @@ https://docs.docker.com/engine/reference/commandline/container_exec/
 
 É aqui que entra a questão dos namespaces. Tudo que você fizer dentro do docker permanecerá lá, vai estar isolado.
 Quando você sair (exit) e der docker stop, o container de certa forma meio que mata os processos, (sigikill) que estavam antes lá
+
+Problema vim nos containers: https://unix.stackexchange.com/questions/336392/e-unable-to-locate-package-vim-on-debian-jessie-simplified-docker-container
