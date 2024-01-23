@@ -1,3 +1,20 @@
+AVISO⚠️: 
+□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%
+Quando você executa um container no WSL (Windows Subsystem for Linux) para Ubuntu e realiza atualizações dentro desse container,
+a memória do seu Windows é afetada porque o WSL compartilha recursos com o sistema operacional host, neste caso, o Windows.
+
+O WSL é uma camada de compatibilidade que permite executar um ambiente Linux diretamente no Windows,
+mas ainda é parte integrante do sistema operacional Windows. Quando você executa um container no WSL,
+o Docker usa a infraestrutura do WSL para gerenciar e executar o container.
+
+Quando você realiza atualizações dentro do container, os dados e as alterações feitas dentro desse ambiente são armazenados no sistema de arquivos do WSL,
+que por sua vez está armazenado na unidade do Windows. Portanto, mesmo que o ambiente Linux esteja sendo executado em um container isolado, 
+os dados e as alterações feitas dentro desse ambiente ainda ocuparão espaço no sistema de arquivos do Windows.
+
+Essa abordagem tem a vantagem de permitir a integração entre o Windows e o ambiente Linux,
+mas também significa que o espaço utilizado pelo sistema de arquivos do WSL, 
+incluindo os dados do container, será refletido na utilização de espaço no disco do Windows.⚠️
+□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%□□□□□0%
 Baixe o docker para windows:
 https://docs.docker.com/desktop/install/windows-install/
 
