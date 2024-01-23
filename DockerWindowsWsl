@@ -3,7 +3,9 @@ https://docs.docker.com/desktop/install/windows-install/
 
 Após isso, siga passo a passo do software (instalação padrão)
 
-Após isso, inicie o aplicativo do docker e vamos testar em nosso Power Shell ou cmd:
+Dica pessoal: Quando o docker for instalado, você pode abrir o terminal dele e operar. Mas prefiri baixar o ubuntu no wsl, para simular melhor o sistema linux.
+https://ubuntu.com/wsl
+Após isso, só executar o terminal do ubuntu, pesquise-o e siga essas outras etapas e comandos.
 
 - docker run hello-world
 Deve aparecer esta mensagem: 
@@ -42,6 +44,38 @@ Essa imagem já existe. Só apenas pusermos um nome aleatório, nós precisaremo
 Hello World! (an example of minimal Dockerization)
 
 Neste outro exemplo, o nosso container terá uma imagem relacionada ao sistema operacional ubuntu: https://hub.docker.com/_/ubuntu
+-------------------------------------------------------------------------------------------------------------------------------------
+Veja este cenário: queremos baixar a imagem do ubuntu para um container, vamos passo a passo:
+1) Pesquise no docker hub o nome da imagem do ubuntu
+2) Após descobrir o nome, vamos baixar ela com o comando: docker pull ubuntu
+3) E agora a sua execução: docker run ubuntu
+Dúvidas: Perceba que se você fizer esse passo a passo, no passo três não acontecerá nada (aparentemente). A explicação para isso é: Na verdade ele subiu o container
+e executou o comando bash, cummprindo seu objetivo principal e partir disso não tinha mais operações (processos) dentro dele, por isso não aparecerá caso você execute
+o comando docker ps ou docker container ls. Para o container permanecer ativo, precisa de no mínimo um processo atuando nele. Vamos por um bem simples, veja:
+
+docker run ubuntu sleep 1d
+e teremos isso como resultado (ele ainda estará operando):
+CONTAINER ID   IMAGE     COMMAND      CREATED          STATUS          PORTS     NAMES
+b62a159d7c17   ubuntu    "sleep 1d"   20 seconds ago   Up 18 seconds             dreamy_hodgkin
+
+A segunda pergunta que precisamos responder é o que aconteceu nos bastidores para que nosso container pudesse ser executado daquela primeira vez?
+
+Na ocasião em que nosso host, o Ubuntu neste caso, executou o comando docker run ubuntu, docker pull ubuntu,
+ele simplesmente foi até o Docker Hub e solicitou a imagem chamada Ubuntu. O Docker Hub respondeu afirmando ter essa imagem e a disponibilizou para nós.
+
+Realizamos o download dessa imagem, e em seguida, nosso host fez, na etapa em que observamos o digest e sha256,
+uma validação para assegurar a autenticidade da imagem, verificando se é realmente a imagem que procurávamos.
+
+Ao realizar o docker run, se não a tivermos localmente, buscamos no Docker Hub, 
+validamos através de um hash e executamos nosso container.
+Este geralmente possui, como visto no caso do Ubuntu, um comando padrão a ser executado, que, ao compararmos com o menu rodando o comando docker ps -a no terminal,
+seria o bash.
+
+Caso não tenhamos cuidado, acabaremos criando containers zumbis que iniciarão e logo encerrarão, pois não teremos nenhum processo impedindo sua finalização.
+Contudo, agora sabemos que, mantendo pelo menos um processo, nosso container permanecerá em execução.
+
+Etapas do run:
+Procura a imagem localmente -> Baixa a imagem caso não encontre localmente -> Valida o hash da imagem -> Executa o container.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 COMANDOS DOCKER:
@@ -49,3 +83,9 @@ docker run imagem (Executar a imagem)
 docker pull imagem (Apenas para baixar essa imagem)
 docker ps ou docker container ls (Apresentar containers EM execução)
 docker ps -a ou docker container ls -a (Apresentar containers que ESTAVAM em execução)
+
+Com a execução deste último comando citado, aparecerá no terminal:
+
+CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
+f27e6e53ced3   hello-world   "/hello"   15 minutes ago   Exited (0) 15 minutes ago             tender_herschel
+72f962bc4498   hello-world   "/hello"   23 hours ago     Exited (0) 23 hours ago               admiring_gauss
