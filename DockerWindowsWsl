@@ -104,7 +104,7 @@ docker stop CONTAINER ID ou NAMES (Parar a execução daquele container); pode u
 docker start CONTAINER ID ou NAMES (Voltar a execução daquele container)
 docker pause CONTAINER ID (Pausa o container)
 docker unpause CONTAINER ID (Volta o container para operação)
-docker exec -it CONTAINER ID bash (Iniciar container e entrar dentro de seu terminal)
+docker exec -it CONTAINER ID bash (Permite executar um comando em um container que já está em execução.)
 docker run -it imagem (ubuntu,etc) bash (Iniciar container e entrar dentro de seu terminal)
 docker rm CONTAINER ID (Remove container)
 docker volume prune (Você pode verificar se existem volumes não utilizados que podem estar retendo espaço em disco. Listar e remover volumes não utilizados)
