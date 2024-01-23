@@ -83,9 +83,23 @@ docker run imagem (Executar a imagem)
 docker pull imagem (Apenas para baixar essa imagem)
 docker ps ou docker container ls (Apresentar containers EM execução)
 docker ps -a ou docker container ls -a (Apresentar containers que ESTAVAM em execução)
+docker stop CONTAINER ID ou NAMES (Parar a execução daquele container)
+docker start CONTAINER ID ou NAMES (Voltar a execução daquele container)
+docker pause CONTAINER ID (Pausa o container)
+docker unpause CONTAINER ID (Volta o container para operação)
 
 Com a execução deste último comando citado, aparecerá no terminal:
 
 CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
 f27e6e53ced3   hello-world   "/hello"   15 minutes ago   Exited (0) 15 minutes ago             tender_herschel
 72f962bc4498   hello-world   "/hello"   23 hours ago     Exited (0) 23 hours ago               admiring_gauss
+
+
+PARA VOCÊ INTERAGIR NO CONTAINER (ENTRAR NO CONTAINER) TEMOS UM COMANDO:
+
+docker exec -it CONTAINER ID bash  ( -i modo de interação -t acessar o TTY que é o terminal do container; bash para navegar dentro do ubuntu)
+docker container exec [OPTIONS] CONTAINER COMMAND [ARG...]
+https://docs.docker.com/engine/reference/commandline/container_exec/
+
+É aqui que entra a questão dos namespaces. Tudo que você fizer dentro do docker permanecerá lá, vai estar isolado.
+Quando você sair (exit) e der docker stop, o container de certa forma meio que mata os processos, (sigikill) que estavam antes lá
