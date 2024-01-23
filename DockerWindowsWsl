@@ -34,3 +34,18 @@ Share images, automate workflows, and more with a free Docker ID:
 
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
+
+
+O hello world só funcionou pois a imagem existe. Se ela existir, ele acesso o docker hub e puxa as informações. olhe este link https://hub.docker.com/_/hello-world
+
+Essa imagem já existe. Só apenas pusermos um nome aleatório, nós precisaremos criar a imagem ou ele irá apresentar erros devido a falta de imagens.
+Hello World! (an example of minimal Dockerization)
+
+Neste outro exemplo, o nosso container terá uma imagem relacionada ao sistema operacional ubuntu: https://hub.docker.com/_/ubuntu
+
+--------------------------------------------------------------------------------------------------------------------------------------
+COMANDOS DOCKER:
+docker run imagem (Executar a imagem)
+docker pull imagem (Apenas para baixar essa imagem)
+docker ps ou docker container ls (Apresentar containers EM execução)
+docker ps -a ou docker container ls -a (Apresentar containers que ESTAVAM em execução)
