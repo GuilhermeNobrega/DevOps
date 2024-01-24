@@ -128,3 +128,5 @@ https://docs.docker.com/engine/reference/commandline/container_exec/
 Quando você sair (exit) e der docker stop, o container de certa forma meio que mata os processos, (sigikill) que estavam antes lá
 
 Problema vim nos containers: https://unix.stackexchange.com/questions/336392/e-unable-to-locate-package-vim-on-debian-jessie-simplified-docker-container
+
+Mapeamento de portas no Docker:
