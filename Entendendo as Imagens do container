@@ -27,3 +27,9 @@ f589ccde7957   7 years ago   /bin/sh -c #(nop) CMD ["/bin/sh" "-c" "cd /u…   0
 <missing>      7 years ago   /bin/sh -c #(nop) MAINTAINER NGINX Docker Ma…   0B
 <missing>      7 years ago   /bin/sh -c #(nop) CMD ["/bin/bash"]             0B
 <missing>      7 years ago   /bin/sh -c #(nop) ADD file:b5391cb13172fb513…   125MB
+
+Informação importante: Caso já tenhamos uma imagem salva em nosso dispositivo, faremos apenas download das imagens que não temos, para não repetir informações, utilizando as camadas em outras imagens (reutilização de imagens).
+Quando temos nossa imagem, temos apenas permissão de leitura (ready only). Não podemos modificar depois de criar, é imutável!
+
+Você se pergunta.. "Se apenas leitura, por que quando dou o comando docker run -it nome_imagem ele pode criar arquivos, navegar em diretórios?"
+Resposta: O container é uma imagem adicional de read and write (camada temporária por cima da imagem. Quando deletamos o container, a camada extra é deletada também.
