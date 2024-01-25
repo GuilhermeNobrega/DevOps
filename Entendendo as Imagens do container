@@ -46,3 +46,12 @@ Resumindo: Eles reaproveitam as camadas das imagens que já temos e quando criam
 CRIAÇÃO DE IMAGENS PARA CONTEINERES:
 Vamos definir nosso arquivo docker file ---> e partir dele criar nossa imagem --> gerar conteiner (run) a partir da imagem
 
+Estaremos utilizando o Visual Studio Code para realizar esse procedimento. Para ter um tutorial de instalação e conexão deste com o wsl, entre esse diretório que terá a explicação:
+https://www.youtube.com/watch?v=k9MF9rMJnTE
+
+Dentro do Visual Studio code, crie um arquivo chamamdo "DockerFile"
+
+Agora queremos que dentro do projeto como um todo, termos o node para rodar um servidor, queremos sua imagem, que já está pronta: https://hub.docker.com/_/node
+Vamos procurar uma versão do node, para utilizar como base para nossa
+
+Para rodar o nosso DockerFile, rode o comando:
