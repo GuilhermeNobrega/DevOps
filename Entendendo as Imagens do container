@@ -11,3 +11,19 @@ dockersamples/static-site   latest    f589ccde7957   7 years ago    191MB
 Agora, para pegarmos mais informações a respeito dessas imagens, digite o comando: docker inspect id_imagem
 
 Para verificar as camadas de uma imagem digite: docker history id_image
+
+docker history f589ccde7957
+IMAGE          CREATED       CREATED BY                                      SIZE      COMMENT
+f589ccde7957   7 years ago   /bin/sh -c #(nop) CMD ["/bin/sh" "-c" "cd /u…   0B
+<missing>      7 years ago   /bin/sh -c #(nop) WORKDIR /usr/share/nginx/h…   0B
+<missing>      7 years ago   /bin/sh -c #(nop) COPY file:c8203f6bfe2ff6ba…   8.75kB
+<missing>      7 years ago   /bin/sh -c mkdir -p /usr/share/nginx/html       0B
+<missing>      7 years ago   /bin/sh -c #(nop) ENV AUTHOR=Docker             0B
+<missing>      7 years ago   /bin/sh -c #(nop) CMD ["nginx" "-g" "daemon …   0B
+<missing>      7 years ago   /bin/sh -c #(nop) EXPOSE 443/tcp 80/tcp         0B
+<missing>      7 years ago   /bin/sh -c ln -sf /dev/stdout /var/log/nginx…   22B
+<missing>      7 years ago   /bin/sh -c apt-key adv --keyserver hkp://pgp…   65.4MB
+<missing>      7 years ago   /bin/sh -c #(nop) ENV NGINX_VERSION=1.9.12-1…   0B
+<missing>      7 years ago   /bin/sh -c #(nop) MAINTAINER NGINX Docker Ma…   0B
+<missing>      7 years ago   /bin/sh -c #(nop) CMD ["/bin/bash"]             0B
+<missing>      7 years ago   /bin/sh -c #(nop) ADD file:b5391cb13172fb513…   125MB
