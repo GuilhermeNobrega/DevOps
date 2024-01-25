@@ -146,7 +146,9 @@ Perceba que as portas vão estar bagunçadas e "complicadas de entender"
 Vamos testar um comando:
 docker port id_container (serve para mostrar o mapeamento de portas de um container em relação ao host)
 ele informará que a porta 80 está sendo mapeada para outro valor em nosso host, exemplo:
-
+docker port id_container
+80/tcp -> 0.0.0.0:32771 (32771 valor que representara essa porta em nosso host)
+443/tcp -> 0.0.0.0:32770
 *INFORMAÇÃO EXTRA*:
 -------------------------------------------------
 Porta 80: Web (HTTP) Porta 443: Web segura (HTTPS)
