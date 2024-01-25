@@ -18,7 +18,7 @@ incluindo os dados do container, será refletido na utilização de espaço no d
 Baixe o docker para windows:
 https://docs.docker.com/desktop/install/windows-install/
 
-Após isso, siga passo a passo do software (instalação padrão)
+Após isso, siga passo a passo do software (instalação padrão).
 
 Dica pessoal: Quando o docker for instalado, você pode abrir o terminal dele e operar. Mas prefiri baixar o ubuntu no wsl, para simular melhor o sistema linux.
 https://ubuntu.com/wsl
