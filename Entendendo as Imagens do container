@@ -33,3 +33,8 @@ Quando temos nossa imagem, temos apenas permissão de leitura (ready only). Não
 
 Você se pergunta.. "Se apenas leitura, por que quando dou o comando docker run -it nome_imagem ele pode criar arquivos, navegar em diretórios?"
 Resposta: O container é uma imagem adicional de read and write (camada temporária por cima da imagem. Quando deletamos o container, a camada extra é deletada também.
+
+Os conteineres são leves pois: Além de serem processos dentro do sistema, quando ele entra em execução, estamos reaproveitando (reutilizando) as mesmas imagens 
+(por exemplo, 10 mil conteineres com as mesmas imagens e diferenciados apenas
+por uma em cada de read and write.) Acaba que o tamanho do conteiner tem por maior peso a camada de write que estamos gerando para ele, pois a imagem será reutilizada para cada um deles.
+Resumindo: Eles reaproveitam as camadas das imagens que já temos e quando criamos novos conteineres, apenas reutilizamos as mesmas imagens e camadas além da camada adicional de ready and write
