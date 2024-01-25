@@ -1,3 +1,6 @@
+===================================================================================================================================================================================================
+DEFINIÇAÕ DE IMAGEM E INFORMAÇÕES EXTRAS:
+
 Imagens de conteineres: Uma imagem é um conjunto de camadas que formamos imagens. São independentes entre sí, possuindo ID´s diferentes entre si.
 
 Para acessar suas imagens, digite em seu terminal: docker images ou docker image ls:
@@ -38,3 +41,8 @@ Os conteineres são leves pois: Além de serem processos dentro do sistema, quan
 (por exemplo, 10 mil conteineres com as mesmas imagens e diferenciados apenas
 por uma em cada de read and write.) Acaba que o tamanho do conteiner tem por maior peso a camada de write que estamos gerando para ele, pois a imagem será reutilizada para cada um deles.
 Resumindo: Eles reaproveitam as camadas das imagens que já temos e quando criamos novos conteineres, apenas reutilizamos as mesmas imagens e camadas além da camada adicional de ready and write
+
+===================================================================================================================================================================================================
+CRIAÇÃO DE IMAGENS PARA CONTEINERES:
+Vamos definir nosso arquivo docker file ---> e partir dele criar nossa imagem --> gerar conteiner (run) a partir da imagem
+
