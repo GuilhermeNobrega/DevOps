@@ -110,6 +110,10 @@ docker rm CONTAINER ID (Remove container)
 docker volume prune (Você pode verificar se existem volumes não utilizados que podem estar retendo espaço em disco. Listar e remover volumes não utilizados)
 docker container prune (Se você quiser remover todos os containers que não estão em execução)
 docker image prune ( Apagar imagens não utilizadas)
+docker run -d -P
+docker run -d -p (Informar porta)
+docker rm id_container -- force
+docker port id_container
 
 Com a execução deste último comando citado, aparecerá no terminal:
 
@@ -133,7 +137,7 @@ Mapeamento de portas no Docker:
 
 https://hub.docker.com/r/dockersamples/static-site (vamos testar essa imagem)
 
-Para executar essa imagem e sem travar o terminal, use a flag -d:
+Para executar essa imagem e sem travar o terminal e ser executado em segundo plano (em modo destacado) use a flag -d:
 
 docker run -d dockersamples/static-site (para rodar sempre aberto, garante que o software do docker esteja aberto para o uso)
 Teste o comando docker ps para verificar se o container subiu e está em execução. O comando que você verá está mantendo esse container em execução, diferente dos outros que estavam morrendo.
@@ -157,7 +161,8 @@ Ele tem que abrir uma pagina hello docker
 Outra forma importante de se entender:
 Repetindo o processo de apagar e forçar o container, vamos executar novamente:
 docker run -d -p 8080:80 dockersamples/static-docker (O -p minúsculo significa que vamos fazer um mapeamento específico de uma porta do nosso host. Leia os valores assim: A porta 8080 do nosso host reflte na porta 80 do
-conteiner.
+conteiner; Mapeia a porta 8080 do host para a porta 80 do contêiner.
+Isso significa que o serviço dentro do contêiner que está escutando na porta 80 será acessível externamente através da porta 8080 do host
 *INFORMAÇÃO EXTRA*:
 --------------------------------------------------------------------------------------------------------
 Porta 80: Web (HTTP) Porta 443: Web segura (HTTPS) Porta 8080: Console Web solicitando informações (HTTP)
