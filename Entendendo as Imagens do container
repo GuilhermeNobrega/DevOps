@@ -1,3 +1,11 @@
 Imagens de conteineres: Uma imagem é um conjunto de camadas que formamos imagens. São independentes entre sí, possuindo ID´s diferentes entre si.
 
-Para acessar suas imagens, digite em seu terminal: docker images ou docker image ls
+Para acessar suas imagens, digite em seu terminal: docker images ou docker image ls:
+
+ docker images
+REPOSITORY                  TAG       IMAGE ID       CREATED        SIZE
+ubuntu                      latest    e34e831650c1   13 days ago    77.9MB
+hello-world                 latest    d2c94e258dcb   8 months ago   13.3kB
+dockersamples/static-site   latest    f589ccde7957   7 years ago    191MB
+
+Agora, para pegarmos mais informações a respeito dessas imagens, digite o comando docker inspector id_imagem
