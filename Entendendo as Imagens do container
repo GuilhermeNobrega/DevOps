@@ -8,4 +8,6 @@ ubuntu                      latest    e34e831650c1   13 days ago    77.9MB
 hello-world                 latest    d2c94e258dcb   8 months ago   13.3kB
 dockersamples/static-site   latest    f589ccde7957   7 years ago    191MB
 
-Agora, para pegarmos mais informações a respeito dessas imagens, digite o comando docker inspect id_imagem
+Agora, para pegarmos mais informações a respeito dessas imagens, digite o comando: docker inspect id_imagem
+
+Para verificar as camadas de uma imagem digite: docker history id_image
