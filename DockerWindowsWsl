@@ -159,9 +159,9 @@ Repetindo o processo de apagar e forçar o container, vamos executar novamente:
 docker run -d -p 8080:80 dockersamples/static-docker (O -p minúsculo significa que vamos fazer um mapeamento específico de uma porta do nosso host. Leia os valores assim: A porta 8080 do nosso host reflte na porta 80 do
 conteiner.
 *INFORMAÇÃO EXTRA*:
--------------------------------------------------
-Porta 80: Web (HTTP) Porta 443: Web segura (HTTPS)
--------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+Porta 80: Web (HTTP) Porta 443: Web segura (HTTPS) Porta 8080: Console Web solicitando informações (HTTP)
+--------------------------------------------------------------------------------------------------------
 Para testar, tente localhost:80 (Irá dar erro. Pois os namespaces isolam as interfaces de rede, ou seja: a porta 80 do container é diferente da porta 80 do dispositivo host; estão isoladas!
 
 ===============================================================================================================================================================
