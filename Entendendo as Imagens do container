@@ -55,3 +55,5 @@ Agora queremos que dentro do projeto como um todo, termos o node para rodar um s
 Vamos procurar uma versão do node, para utilizar como base para nossa
 
 Para rodar o nosso DockerFile, rode o comando:
+
+https://docs.docker.com/engine/reference/builder/
