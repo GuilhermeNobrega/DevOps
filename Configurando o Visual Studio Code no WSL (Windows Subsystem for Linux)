@@ -18,12 +18,13 @@ sudo ln -s /mnt/c/Users/seu_nome_de_usuário/AppData/Local/Programs/Microsoft\ V
 Remover o link simbólico existente (OUTROS PATH RELACIOANADOS):
 Execute o seguinte comando para remover o link simbólico existente:
 
-sudo rm /mnt/c/Users/jo/AppData/Local/Programs/cursor/resources/app/bin/code ( path do seu sistema, esse é um exemplo)
+sudo rm /mnt/c/Users/nome_user_path/AppData/Local/Programs/cursor/resources/app/bin/code ( path do seu sistema, esse é um exemplo)
 
 Passo 2: Verificar o Link Simbólico
 Verifique se o link simbólico foi criado corretamente.
-As vezes é necessário fazer isso para trocar os links de paths Para verifique os que existem relacioanados ao code:
+
 which -a code (para listar todos os links simbólicos existentes)
+
 Agora, execute para mostrar o PATH:
 
 ls -l /usr/local/bin/code
