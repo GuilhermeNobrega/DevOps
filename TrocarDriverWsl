@@ -1,0 +1,6 @@
+Como faz para trocar o local onde o Wsl está instalado? Siga esse passo a passo para mudar o drive (ssd,hd)
+No PowerShell, faça:
+1) wsl -d nome_linux
+2) wsl --export Ubuntu-22.04 D:\tmp\Ubuntu-22.04.tar (partição que você deseja por aquele linux. Crie diretórios para receber ele)
+3) wsl --unregister Ubuntu-22.04 (Para tirar o wsl e linux do local de origem: windows + r e digite %userprofile%\AppData\Local\Packages. O wls estará n pasta localstate)
+4) wsl --import Ubuntu-22.04 D:\wsl\Ubuntu-22.04 D:\tmp\Ubuntu-22.04.tar (Para importar para o novo drive)
